@@ -17,12 +17,12 @@ const Calculator = () => {
   };
 
   const calculate = () => {
-    try{
-      setResult(eval(result).toString());
-    }catch(err){
-      setResult("Error")
+    try {
+      setResult(result.toString());
+    } catch (err) {
+      setResult("Error");
     }
-  }
+  };
 
   return (
     <div className="container">
